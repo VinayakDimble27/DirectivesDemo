@@ -1,0 +1,11 @@
+<div >
+  <label>Enter student name</label>
+  <input type="text" name="sname" [(ngModel)]="sname">
+  <button (click)="addStudent()"> Add Student</button>
+
+</div>
+
+<div *ngFor="let data of sarr; let ind = index;">
+
+  <h1>{{ind+1}}:{{data}}</h1>
+</div>
